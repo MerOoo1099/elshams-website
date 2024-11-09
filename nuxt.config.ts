@@ -1,48 +1,88 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  modules: [
+    "@nuxtjs/i18n",
+    "@nuxt/icon",
+  ],
+
   css: [
-    '~/assets/scss/tailwind.scss',
-    '~/assets/css/materialdesignicons.min.css',
-    '~/assets/libs/@iconscout/unicons/css/line.css',
-    '~/assets/css/jarallax.min.css'
-],
+    "~/assets/scss/tailwind.scss",
+    "~/assets/css/materialdesignicons.min.css",
+    "~/assets/libs/@iconscout/unicons/css/line.css",
+    "~/assets/css/jarallax.min.css",
+  ],
+
   app: {
     head: {
-      title: 'Upwind - Nuxt Js Landing Page Template',
-      titleTemplate: 'Upwind - Nuxt Js Landing Page Template',
-      htmlAttrs: { class: 'light scroll-smooth', dir:'ltr' },
+      title: "El-Shams",
+      titleTemplate: "El-Shams",
+      htmlAttrs: { class: "light scroll-smooth", dir: "ltr" },
       bodyAttrs: {
-        class: 'font-rubik text-base text-slate-900 dark:text-white dark:bg-slate-900',
+        class:
+          "font-rubik text-base text-slate-900 dark:text-white dark:bg-slate-900",
       },
       meta: [
-        { charset: 'utf-8' },
+        { charset: "utf-8" },
         {
-          name: 'viewport',
-          content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no',
+          name: "viewport",
+          content:
+            "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
         },
-        { hid: 'description', name: 'description', content: '' },
-        { name: 'format-detection', content: 'telephone=no' },
+        { hid: "description", name: "description", content: "" },
+        { name: "format-detection", content: "telephone=no" },
       ],
       link: [
         {
           // rel: 'stylesheet',
           // href: 'https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css',
         },
-        
       ],
       script: [
         {
           // src: 'https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js'
-        }
-      ]
+        },
+      ],
     },
   },
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
-  
-})
+  compatibilityDate: "2024-09-22",
+  i18n: {
+    locales: [
+      { code: "en", file: "en.json" },
+      {
+        code: "ar",
+        file: "ar.json",
+        dir: "rtl",
+      },
+    ],
+    defaultLocale: "en",
+    langDir: "locales/",
+    lazy: true,
+    vueI18n: "@/i18n/i18n.config.js",
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: "i18n_redirected",
+      redirectOn: "root", // recommended
+    },
+  },
+
+  runtimeConfig: {
+    public: {
+      locales: [
+        { code: "en", name: "English", file: "en.json" },
+        {
+          code: "ar",
+          name: "العربية",
+          file: "ar.json",
+          dir: "rtl",
+        },
+      ],
+    },
+  },
+});

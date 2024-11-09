@@ -1,13 +1,13 @@
 <template>
     <div>
-        <section class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800" id="testi">
+        <section class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800" id="reviews">
             <div class="container">
                 <div class="grid grid-cols-1 pb-8 text-center">
-                    <h6 class="text-orange-600 text-base font-medium uppercase mb-2">Testimonial</h6>
-                    <h3 class="mb-4 md:text-2xl text-xl font-medium dark:text-white">Client's Review</h3>
+                    <!-- <h6 class="text-primary text-base font-medium uppercase mb-2">Testimonial</h6> -->
+                    <h3 class="mb-4 md:text-2xl text-xl font-medium dark:text-white">{{$t('clientReviews')}}</h3>
 
-                    <p class="text-slate-400 dark:text-slate-300 max-w-xl mx-auto">Launch your campaign and benefit from
-                        our expertise on designing and managing conversion centered Tailwind CSS html page.</p>
+                    <!-- <p class="text-slate-400 dark:text-slate-300 max-w-xl mx-auto">Launch your campaign and benefit from
+                        our expertise on designing and managing conversion centered Tailwind CSS html page.</p> -->
                 </div><!--end grid-->
                 <div class="grid grid-cols-1 mt-8 relative">
 
@@ -37,7 +37,7 @@
                                     </p>
 
                                     <div>
-                                        <span class="text-orange-600 block mb-1">{{ item.name }}</span>
+                                        <span class="text-primary block mb-1">{{ item.name }}</span>
                                         <span class="text-slate-400 text-sm dark:text-white/60 block">{{ item.position
                                             }}</span>
                                     </div>

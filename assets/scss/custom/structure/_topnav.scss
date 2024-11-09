@@ -8,11 +8,11 @@
       .navbar-nav {
           @apply mt-4 flex flex-row overflow-y-scroll h-24;
           .nav-link {
-              @apply block p-3 text-slate-900 hover:text-orange-600 dark:text-white/60 dark:hover:text-white;
+              @apply block p-3 text-slate-900 hover:text-primary dark:text-third dark:hover:text-secondary;
           }
           .active {
               .nav-link {
-                  @apply text-orange-600 dark:text-white;
+                  @apply text-secondary dark:text-white;
               }
           }
       }
@@ -54,7 +54,7 @@
       }
   }
   &.is-sticky {
-      @apply bg-white dark:bg-slate-900 shadow dark:shadow-slate-800;
+      @apply bg-secondary dark:bg-slate-900 shadow dark:shadow-slate-800;
       .navbar-brand {
           .l-dark {
               @apply inline-block;
@@ -88,11 +88,11 @@
 
               &.nav-light {
                   .nav-link {
-                      @apply block p-3 text-white/60 hover:text-white;
+                      @apply block p-3 text-third hover:text-secondary;
                   }
                   .active {
                       .nav-link {
-                          @apply text-white;
+                          @apply text-secondary;
                       }
                   }
               }
@@ -112,17 +112,17 @@
               }
               .active {
                   .nav-link {
-                      @apply text-orange-600;
+                      @apply text-primary;
                   }
               }
 
               &.nav-light {
                   .nav-link {
-                      @apply text-slate-900 hover:text-orange-600 dark:text-white/60 dark:hover:text-white;
+                      @apply text-slate-900 hover:text-third   dark:text-third dark:hover:text-secondary;
                   }
                   .active {
                       .nav-link {
-                          @apply text-orange-600 dark:text-white;
+                          @apply text-third dark:text-secondary;
                       }
                   }
               }
@@ -142,7 +142,7 @@
               }
               .active {
                   .nav-link {
-                      @apply text-orange-600;
+                      @apply text-primary;
                   }
               }
               .menu-social {
