@@ -1,9 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: [
-    "@nuxtjs/i18n",
-    "@nuxt/icon",
-  ],
+  modules: ["@nuxtjs/i18n", "@nuxt/icon", "@nuxt/ui"],
 
   css: [
     "~/assets/scss/tailwind.scss",

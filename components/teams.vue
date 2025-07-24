@@ -9,9 +9,6 @@
         <h6 class="text-primary dark:text-secondary text-2xl font-medium uppercase mb-2">
           {{ $t("team") }}
         </h6>
-
-        <!-- <p class="text-slate-400 dark:text-slate-300 max-w-xl mx-auto">Launch your campaign and benefit from our
-                    expertise on designing and managing conversion centered Tailwind CSS html page.</p> -->
       </div>
       <!--end grid-->
 
@@ -23,7 +20,7 @@
         >
           <img
             :src="item.image"
-            class="group-hover:origin-center group-hover:scale-105 transition duration-500 h-[35vh] w-[21vw]"
+            class="group-hover:origin-center group-hover:scale-105 transition duration-500 lg:h-[35vh] lg:w-[21vw]"
             alt=""
           />
           <div

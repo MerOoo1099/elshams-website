@@ -1,8 +1,5 @@
 <template>
-  <section
-    class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800"
-    id="contact"
-  >
+  <section class="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800" id="contact">
     <div class="container">
       <div class="grid grid-cols-1 pb-8 text-center">
         <h6 class="text-primary dark:text-secondary text-2xl font-medium uppercase mb-2">
@@ -90,18 +87,14 @@
           <div class="lg:ms-8">
             <div class="flex">
               <div class="icons text-center mx-auto">
-                <i
-                  class="uil uil-phone block rounded text-2xl dark:text-white mb-0"
-                ></i>
+                <i class="uil uil-phone block rounded text-2xl dark:text-white mb-0"></i>
               </div>
 
               <div class="flex-1 ms-6">
                 <h5 class="text-lg dark:text-white mb-2 font-medium">
                   {{ $t("Phone") }}
                 </h5>
-                <a href="tel:+201014055568" class="text-slate-400"
-                  >+201014055568</a
-                >
+                <a href="tel:+201014055568" class="text-slate-400">+201014055568</a>
               </div>
             </div>
 
@@ -135,9 +128,12 @@
                 <h5 class="text-lg dark:text-white mb-2 font-medium">
                   {{ $t("Location") }}
                 </h5>
-                <p class="text-slate-400 mb-2">
+                <a
+                  href="https://www.google.com/maps/place/129+Othman+Ibn+Afan+Sq._+Al+Kolia+Al+Harbia+Sq,+El-Nozha,+El+Nozha,+Cairo+Governorate+4470180/@30.1026466,31.3480249,20.86z/data=!4m6!3m5!1s0x145815e6abee83ad:0xb421816d17d3e682!8m2!3d30.1027316!4d31.3481321!16s%2Fg%2F11c3q3kvzp?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D"
+                  class="text-slate-400 mb-2"
+                >
                   {{ $t("companyLocation") }}
-                </p>
+                </a>
               </div>
             </div>
           </div>
