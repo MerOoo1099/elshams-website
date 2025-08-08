@@ -140,28 +140,6 @@ export default {
     return {
       clients: [
         {
-          image: client,
-          name: "mostafa",
-          position: "CEO",
-          facebook: "https://www.facebook.com/mostafa.ismaeel.9?mibextid=ZbWKwL",
-          instgram:
-            "https://www.instagram.com/mostafa_ish/profilecard/?igsh=MTA5dzJmZ3YyYXM3NQ==",
-          tiktok: "https://www.tiktok.com/@mostafa.kayan?_t=8qFfnK49ERO&_r=1",
-          linkedIn:
-            "https://www.linkedin.com/in/mostafaismaeelhvac?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        },
-        {
-          image: client2,
-          name: "islamSoliman",
-          position: "CTO",
-          facebook: "https://www.facebook.com/islam.soliman.79?mibextid=kFxxJD",
-          instgram:
-            "https://www.instagram.com/islam_soliman?igsh=MWs4c25pbWkzNm03bw%3D%3D&utm_source=qr",
-          tiktok: "https://www.tiktok.com/@mostafa.kayan?_t=8qFfnK49ERO&_r=1",
-          linkedIn:
-            "https://www.linkedin.com/in/islam-soliman-cipp-108791113?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-        },
-        {
           image: client3,
           name: "islamBob",
           position: "COO",

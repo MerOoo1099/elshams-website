@@ -7,7 +7,9 @@
   >
     <div class="container relative z-1">
       <!-- center this div in small screens -->
-      <div class="flex flex-col justify-center md:text-start text-center md:mt-12 mt-52 lg:w-1/2 md:w-4/6 w-full">
+      <div
+        class="flex flex-col justify-center md:text-start text-center md:mt-12 mt-52 lg:w-1/2 md:w-4/6 w-full"
+      >
         <h4
           class="text-white lg:text-5xl text-3xl leading-normal font-medium mb-7 position-relative animate-slideInFromLeft"
         >
